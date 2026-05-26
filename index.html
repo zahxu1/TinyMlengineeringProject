@@ -768,7 +768,7 @@ footer {
   </h1>
 
   <p class="hero-desc fade-up" style="transition-delay:0.16s">
-    A low-power embedded device that listens for emergency phrases and triggers a real-time alert — built for elderly residents living alone.
+    AI-Powered Emergency Distress Detection System Using TinyML which performs real-time inference to detect predefined emergency distress phrases and triggers a real-time alert — built for elderly residents living alone.
   </p>
 
   <div class="hero-cta-row fade-up" style="transition-delay:0.24s">
@@ -810,7 +810,7 @@ footer {
         <strong>Existing solutions fall short.</strong>Emergency buttons need to be physically reached. Smartphones assume the user is mobile and tech-literate.
       </p>
       <p>
-        This project takes a different approach: a passive, always-on device designed to sit near a bathroom — statistically one of the highest-risk areas for elderly falls. No button to press. No app to open. Just speak, and it responds.
+        This project takes a different approach: a passive, always-on device designed to sit near a bathroom — statistically one of the highest-risk areas for elderly falls. No button to press. Traditional AI systems rely heavily on cloud processing and internet connectivity. WHY TinyML ?  TinyML enables machine learning models to run directly on low-power embedded devices, allowing faster response times, enhanced privacy, and offline operation.
       </p>
       <p>
         The phrase <strong>"Help me now"</strong> was chosen deliberately as it only has three syllables, easy to distinguish from background speech, and naturally translatable across Singapore's three main languages: English, Mandarin, and Malay.
@@ -828,11 +828,11 @@ footer {
       </div>
       <div class="stat-card">
         <span class="stat-card-val">$0</span>
-        <p class="stat-card-desc">ongoing cost — made to be cost efficent </p>
+        <p class="stat-card-desc">ongoing cost — made to be cost efficent, Offline AI Processing, Low Power Consumption </p>
       </div>
       <div class="stat-card">
-        <span class="stat-card-val">100%</span>
-        <p class="stat-card-desc">on-device inference — audio never leaves the microcontroller</p>
+        <span class="stat-card-val">EFFICENT</span>
+        <p class="stat-card-desc">Running inference fully offline, Balancing accuracy and latency</p>
       </div>
     </div>
   </div>
@@ -916,6 +916,7 @@ footer {
         <h3>Distress Recognition System</h3>
         <p>
           A low-powered device using the Arduino Nano BLE 33 that recognises a distress phrase and activates a colour-coded LED alert system in real time.
+          Unlike conventional emergency systems requiring manual activation, this project utilizes embedded TinyML speech recognition to autonomously detect verbal distress signals in real time while maintaining low power consumption and offline functionality
         </p>
 
         <ul class="feature-list">
@@ -933,7 +934,7 @@ footer {
           </li>
           <li>
             <span class="fi">◈</span>
-            Sub-200ms end-to-end latency from audio capture to LED trigger
+            Operates fully on-device without reliance on cloud computation
           </li>
         </ul>
 
@@ -964,7 +965,7 @@ footer {
   <p class="section-label fade-up">04 — The Process</p>
   <h2 class="section-heading fade-up">How it was built.</h2>
   <p class="section-sub fade-up" style="transition-delay:0.08s">
-    The project was built end-to-end from raw audio collection to on-device deployment. Every stage involved optimisation and real failures to resolve.
+    Initial research focused on TinyML, embedded speech recognition, and low-power edge AI systems. Various approaches to speech detection and offline inference were explored to determine a suitable solution for deployment on resource-constrained microcontrollers.. Every stage involved optimisation and real failures to resolve.
   </p>
 
   <div class="process-steps">
@@ -972,7 +973,7 @@ footer {
       <span class="step-num">01</span>
       <span class="step-icon">🎙</span>
       <p class="step-title">Dataset collection</p>
-      <p class="step-body">Personally recorded over 5,700 labelled audio samples across 30 different voices from varying age, gender, distance, and tone. Crucially, bathroom sounds like running taps and flushing were included as noise data so the model could ignore them.</p>
+      <p class="step-body">Personally recorded over 5,700 labelled audio samples across 30 different voices from varying age, gender, distance, and tone. Crucially, bathroom sounds like running taps and flushing were included as noise data so the model could ignore them.Background noise and pronunciation variations were considered to improve robustness during inference</p>
     </div>
 
     <div class="step-card fade-up" style="transition-delay:0.10s">
@@ -986,14 +987,14 @@ footer {
       <span class="step-num">03</span>
       <span class="step-icon">🧠</span>
       <p class="step-title">Model training</p>
-      <p class="step-body">Trained a 1D convolutional neural network over 200 cycles at a 0.005 learning rate to classify 5 output categories: the 3 phrases, background noise, and unknown speech. Final platform accuracy: 90.59%.</p>
+      <p class="step-body">A 1D Convolutional Neural Network (CNN) was trained over 200 epochs using a learning rate of 0.005 to classify five output categories, including three predefined distress phrases, background noise, and unknown speech. The final deployed model achieved an overall classification accuracy of 90.59%.</p>
     </div>
 
     <div class="step-card fade-up" style="transition-delay:0.20s">
       <span class="step-num">04</span>
       <span class="step-icon">🔌</span>
       <p class="step-title">Deployment &amp; casing</p>
-      <p class="step-body">Exported as a C++ Arduino library, flashed to the board, and wired to three LEDs with appropriate resistors — all housed in a custom 3D printed enclosure running off a 9V battery. No computer, no cloud.</p>
+      <p class="step-body">Exported as a C++ Arduino library, flashed to the board, and wired to three LEDs with appropriate resistors — all housed in a custom 3D printed enclosure running off a 9V battery.</p>
     </div>
   </div>
 </section>
