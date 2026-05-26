@@ -965,7 +965,8 @@ footer {
   <p class="section-label fade-up">04 — The Process</p>
   <h2 class="section-heading fade-up">How it was built.</h2>
   <p class="section-sub fade-up" style="transition-delay:0.08s">
-    Initial research focused on TinyML, embedded speech recognition, and low-power edge AI systems. Various approaches to speech detection and offline inference were explored to determine a suitable solution for deployment on resource-constrained microcontrollers.. Every stage involved optimisation and real failures to resolve.
+    Initial research focused on TinyML, embedded speech recognition, and low-power edge AI systems to identify an effective approach for real-time offline distress detection. Multiple speech recognition and inference methods were explored and evaluated for deployment on resource-constrained microcontrollers.
+    The development process involved continuous experimentation, testing, and optimisation to balance detection accuracy, inference speed, memory usage, and power efficiency. Throughout the project, several hardware and software limitations were encountered, requiring iterative troubleshooting and refinement before achieving a stable and reliable embedded AI system.
   </p>
 
   <div class="process-steps">
@@ -1007,7 +1008,7 @@ footer {
   <div class="reflection-grid">
     <div class="reflection-body fade-up">
       <p>
-        The biggest lesson was that <strong>data collection method matters more than model architecture.</strong> My first attempt used phone-recorded audio, while it was convenient the microphone characteristics didn't match the Arduino's built-in mic, causing frequent false positives when deployed. Switching to the board's own microphone for all recording made a significant difference.
+        The biggest lesson was that <strong>data collection method matters more than model architecture.</strong> My first attempt used phone-recorded audio, while it was convenient the microphone characteristics didn't match the Arduino's built-in mic, causing frequent false positives when deployed. Switching to the board's own microphone for all recording made a significant difference. Multiple rounds of testing were conducted under different environmental conditions to evaluate detection reliability and system responsiveness
       </p>
       <p>
         Including <strong>bathroom noise samples</strong> — tap water, toilet flushing, water droplets and any other background noise turned out to be one of the most important decisions. Without them, the model couldn't reliably filter out the environment it's actually deployed in.
@@ -1020,7 +1021,7 @@ footer {
     <div class="next-steps fade-up" style="transition-delay:0.1s">
       <div class="next-step-item">
         <span class="ns-num">→ 01</span>
-        <p class="ns-body"><strong>GSM alert module</strong> — add an auto-call system to the caregiver when a phrase is detected.</p>
+        <p class="ns-body"><strong>GSM alert module</strong> — The system could be expanded to send real-time alerts directly to caregivers, family members, or emergency services through mobile or smartwatch integration.</p>
       </div>
       <div class="next-step-item">
         <span class="ns-num">→ 02</span>
