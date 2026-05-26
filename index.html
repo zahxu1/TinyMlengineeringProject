@@ -768,7 +768,7 @@ footer {
   </h1>
 
   <p class="hero-desc fade-up" style="transition-delay:0.16s">
-    A low-power embedded device that listens for emergency phrases and triggers a real-time alert — built for elderly residents living alone, requiring no smartphone, no internet, no setup.
+    A low-power embedded device that listens for emergency phrases and triggers a real-time alert — built for elderly residents living alone.
   </p>
 
   <div class="hero-cta-row fade-up" style="transition-delay:0.24s">
@@ -807,13 +807,13 @@ footer {
         According to Singapore's National Registry of Diseases, the incidence rate of unintentional falls among adults over 60 is <strong>277.7 per 100,000</strong> — and many of these happen at home, often alone. When no one is nearby, even a minor fall can become life-threatening.
       </p>
       <p>
-        <strong>Existing solutions fall short.</strong> Smart home systems require WiFi. Emergency buttons need to be physically reached. Smartphones assume the user is mobile and tech-literate.
+        <strong>Existing solutions fall short.</strong>Emergency buttons need to be physically reached. Smartphones assume the user is mobile and tech-literate.
       </p>
       <p>
         This project takes a different approach: a passive, always-on device designed to sit near a bathroom — statistically one of the highest-risk areas for elderly falls. No button to press. No app to open. Just speak, and it responds.
       </p>
       <p>
-        The phrase <strong>"Help me now"</strong> was chosen deliberately — three syllables, easy to distinguish from background speech, and naturally translatable across Singapore's three main languages: English, Mandarin, and Malay.
+        The phrase <strong>"Help me now"</strong> was chosen deliberately as it only has three syllables, easy to distinguish from background speech, and naturally translatable across Singapore's three main languages: English, Mandarin, and Malay.
       </p>
     </div>
 
@@ -828,7 +828,7 @@ footer {
       </div>
       <div class="stat-card">
         <span class="stat-card-val">$0</span>
-        <p class="stat-card-desc">ongoing cost — no subscription, no WiFi, no smartphone needed</p>
+        <p class="stat-card-desc">ongoing cost — made to be cost efficent </p>
       </div>
       <div class="stat-card">
         <span class="stat-card-val">100%</span>
@@ -854,7 +854,7 @@ footer {
     </div>
 
     <div class="led-panel fade-up" style="transition-delay:0.18s">
-      <p class="led-panel-title">// LED alert system — tap to simulate</p>
+      <p class="led-panel-title">// LED alert system </p>
 
       <div class="led-row" id="row-en" onclick="activateLed('en')">
         <div class="led-bulb red"></div>
@@ -883,7 +883,6 @@ footer {
         <span class="led-color-badge green">GREEN</span>
       </div>
 
-      <p class="hint-text">↑ click to simulate a detection event</p>
 
       <div class="project-card" style="margin-top: 8px;">
         <p style="font-size:13px; color: var(--text2); line-height:1.7;">
@@ -902,7 +901,7 @@ footer {
       <h2 class="section-heading fade-up">Hardware &amp; software.</h2>
     </div>
     <p class="section-sub fade-up" style="transition-delay:0.1s">
-      TinyML is the practice of running machine learning models on microcontrollers — devices with kilobytes of RAM, not gigabytes. Every design decision had to account for extreme resource constraints.
+      TinyML is the practice of running machine learning models on microcontrollers. Devices with kilobytes of RAM, not gigabytes. Design specically to run on low-powered energy consumption.
     </p>
   </div>
 
@@ -916,17 +915,17 @@ footer {
         <span class="project-badge"><span class="pulse"></span>Feature Prototype</span>
         <h3>Distress Recognition System</h3>
         <p>
-          A low-powered device using the Arduino Nano BLE 33 that recognises a distress phrase and activates a colour-coded LED alert system in real time — with zero internet connectivity required.
+          A low-powered device using the Arduino Nano BLE 33 that recognises a distress phrase and activates a colour-coded LED alert system in real time.
         </p>
 
         <ul class="feature-list">
           <li>
             <span class="fi">◈</span>
-            Noise-robust detection — model trained on apartment soundscapes including TV, traffic, and background conversation
+            Noise-robust detection - model trained on apartment soundscapes including TV, traffic, and background conversation
           </li>
           <li>
             <span class="fi">◈</span>
-            Self-collected multilingual dataset — audio samples recorded and labelled from scratch
+            Self-collected multilingual dataset - audio samples recorded and labelled from scratch
           </li>
           <li>
             <span class="fi">◈</span>
@@ -965,7 +964,7 @@ footer {
   <p class="section-label fade-up">04 — The Process</p>
   <h2 class="section-heading fade-up">How it was built.</h2>
   <p class="section-sub fade-up" style="transition-delay:0.08s">
-    The project was built end-to-end — from raw audio collection to on-device deployment. Every stage involved real decisions and real failures.
+    The project was built end-to-end from raw audio collection to on-device deployment. Every stage involved optimisation and real failures to resolve.
   </p>
 
   <div class="process-steps">
@@ -973,7 +972,7 @@ footer {
       <span class="step-num">01</span>
       <span class="step-icon">🎙</span>
       <p class="step-title">Dataset collection</p>
-      <p class="step-body">Personally recorded over 5,700 labelled audio samples across 30 different voices — varying age, gender, distance, and tone. Crucially, bathroom sounds like running taps and flushing were included as noise data so the model could ignore them.</p>
+      <p class="step-body">Personally recorded over 5,700 labelled audio samples across 30 different voices from varying age, gender, distance, and tone. Crucially, bathroom sounds like running taps and flushing were included as noise data so the model could ignore them.</p>
     </div>
 
     <div class="step-card fade-up" style="transition-delay:0.10s">
@@ -1007,10 +1006,10 @@ footer {
   <div class="reflection-grid">
     <div class="reflection-body fade-up">
       <p>
-        The biggest lesson was that <strong>data collection method matters more than model architecture.</strong> My first attempt used phone-recorded audio — convenient, but the microphone characteristics didn't match the Arduino's built-in mic, causing frequent false positives when deployed. Switching to the board's own microphone for all recording made a significant difference.
+        The biggest lesson was that <strong>data collection method matters more than model architecture.</strong> My first attempt used phone-recorded audio, while it was convenient the microphone characteristics didn't match the Arduino's built-in mic, causing frequent false positives when deployed. Switching to the board's own microphone for all recording made a significant difference.
       </p>
       <p>
-        Including <strong>bathroom noise samples</strong> — tap water, toilet flushing, water droplets — turned out to be one of the most important decisions. Without them, the model couldn't reliably filter out the environment it's actually deployed in.
+        Including <strong>bathroom noise samples</strong> — tap water, toilet flushing, water droplets and any other background noise turned out to be one of the most important decisions. Without them, the model couldn't reliably filter out the environment it's actually deployed in.
       </p>
       <p>
         I also learned that collecting data from 30 different voices, spanning different ages, genders, and speaking distances, was tedious but essential. A model trained only on your own voice will fail in the real world.
@@ -1020,7 +1019,7 @@ footer {
     <div class="next-steps fade-up" style="transition-delay:0.1s">
       <div class="next-step-item">
         <span class="ns-num">→ 01</span>
-        <p class="ns-body"><strong>GSM alert module</strong> — add a SIM800L to auto-call a caregiver when a phrase is detected, so the LED doesn't need to be seen to be useful.</p>
+        <p class="ns-body"><strong>GSM alert module</strong> — add an auto-call system to the caregiver when a phrase is detected.</p>
       </div>
       <div class="next-step-item">
         <span class="ns-num">→ 02</span>
