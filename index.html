@@ -591,6 +591,115 @@ section { padding: 100px 48px; }
   letter-spacing: 0.08em;
   margin-top: 4px;
 }
+/* ── EDGE IMPULSE SECTION ── */
+#edgeimpulse {
+background: var(--bg2);
+border-top: 1px solid var(--border);
+border-bottom: 1px solid var(--border);
+}
+
+.edge-grid {
+display: grid;
+grid-template-columns: 1.1fr 0.9fr;
+gap: 28px;
+margin-top: 52px;
+align-items: start;
+}
+
+.edge-main {
+background: var(--bg3);
+border: 1px solid var(--border);
+border-radius: 14px;
+padding: 32px;
+}
+
+.edge-main p {
+font-size: 14px;
+color: var(--text2);
+line-height: 1.9;
+margin-bottom: 18px;
+}
+
+.edge-main p strong {
+color: var(--text);
+font-weight: 500;
+}
+
+.edge-tools {
+display: flex;
+flex-direction: column;
+gap: 14px;
+}
+
+.edge-tool-card {
+background: var(--bg3);
+border: 1px solid var(--border);
+border-radius: 12px;
+padding: 18px 20px;
+transition: border-color 0.2s, transform 0.2s;
+}
+
+.edge-tool-card:hover {
+border-color: var(--border-hover);
+transform: translateY(-2px);
+}
+
+.edge-tool-title {
+font-family: var(--display);
+font-size: 16px;
+font-weight: 600;
+color: #fff;
+margin-bottom: 6px;
+}
+
+.edge-tool-body {
+font-size: 13px;
+color: var(--text2);
+line-height: 1.65;
+}
+
+.edge-highlight {
+margin-top: 22px;
+display: grid;
+grid-template-columns: 1fr 1fr;
+gap: 12px;
+}
+
+.edge-highlight-card {
+background: rgba(108,92,231,0.06);
+border: 1px solid rgba(108,92,231,0.18);
+border-radius: 10px;
+padding: 16px;
+}
+
+.edge-highlight-card span {
+display: block;
+}
+
+.edge-highlight-title {
+font-family: var(--mono);
+font-size: 10px;
+letter-spacing: 0.12em;
+color: var(--accent2);
+text-transform: uppercase;
+margin-bottom: 8px;
+}
+
+.edge-highlight-body {
+font-size: 13px;
+color: var(--text2);
+line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+.edge-grid {
+grid-template-columns: 1fr;
+}
+
+.edge-highlight {
+grid-template-columns: 1fr;
+}
+}
 
 /* ── PROCESS SECTION ── */
 #process { border-bottom: 1px solid var(--border); }
@@ -751,6 +860,7 @@ footer {
     <li><a href="#problem">Problem</a></li>
     <li><a href="#prototype">Prototype</a></li>
     <li><a href="#details">Build</a></li>
+    <li><a href="#edgeimpulse">Edge Impulse</a></li>
     <li><a href="#process">Process</a></li>
     <li><a href="#reflection">Reflection</a></li>
   </ul>
