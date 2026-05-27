@@ -808,10 +808,9 @@ footer {
         According to Singapore's National Registry of Diseases, the incidence rate of unintentional falls among adults over 60 is <strong>277.7 per 100,000</strong> — and many of these happen at home, often alone. When no one is nearby, even a minor fall can become life-threatening.
       </p>
       <p>
-        <strong>Existing solutions fall short.</strong>Emergency buttons need to be physically reached. Smartphones assume the user is mobile and tech-literate.
-      </p>
+        <strong>Existing solutions fall short.</strong>  Panic buttons require the user to physically reach and press them during an emergency. Smartphones assume the user is mobile and tech-literate. 
       <p>
-        This project takes a different approach: a passive, always-on device designed to sit near a bathroom — statistically one of the highest-risk areas for elderly falls. No button to press. Traditional AI systems rely heavily on cloud processing and internet connectivity. WHY TinyML ?  TinyML enables machine learning models to run directly on low-power embedded devices, allowing faster response times, enhanced privacy, and offline operation.
+        The motivation behind this project came from researching elderly fall incidents that commonly occur in bathrooms and home environments where individuals may not be able to call for help quickly. WHY TinyML ?  TinyML enables machine learning models to run directly on low-power embedded devices, allowing faster response times, enhanced privacy, and offline operation.
       </p>
       <p>
         The phrase <strong>"Help me now"</strong> was chosen deliberately as it only has three syllables, easy to distinguish from background speech, and naturally translatable across Singapore's three main languages: English, Mandarin, and Malay.
@@ -887,7 +886,7 @@ footer {
 
       <div class="project-card" style="margin-top: 8px;">
         <p style="font-size:13px; color: var(--text2); line-height:1.7;">
-          Tested across <strong style="color:var(--text)">7 different voices</strong> — the model successfully detected the correct phrase on the first attempt in 5 out of 7 cases. The three-language design was deliberate: Singapore's elderly community spans English, Mandarin, and Malay speakers. A device that only understands one language would exclude the majority of those it's meant to protect.
+          Tested across <strong style="color:var(--text)">7 different voices</strong> — the model successfully detected the correct phrase on the first attempt in 5 out of 7 cases. To improve model accuracy and reduce false positives, over 1000 audio samples were collected across multiple speakers, languages, and environmental condition.
         </p>
       </div>
     </div>
