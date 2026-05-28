@@ -231,7 +231,7 @@ footer{padding:40px 48px;display:flex;align-items:center;justify-content:space-b
 <section id="prototype">
   <p class="sec-label fu">02 — Live Demo</p>
   <h2 class="sec-h fu">See the prototype work.</h2>
-  <p class="sec-sub fu" style="transition-delay:.08s">Three LEDs act as the alert output — one per language. When the on-device AI recognises a distress phrase above its confidence threshold, the matching LED fires within milliseconds.</p>
+  <p class="sec-sub fu" style="transition-delay:.08s">Three LEDs act as the alert output — one per language. The system operates entirely offline on an Arduino Nano 33 BLE Sense microcontroller and activates a colour-coded LED alert response whenever a distress phrase is detected with sufficient confidence.</p>
   <div class="proto-grid">
     <div class="video-wrap fu" style="transition-delay:.1s">
       <video controls poster="assets/thumbnail.jpg">
@@ -389,8 +389,8 @@ footer{padding:40px 48px;display:flex;align-items:center;justify-content:space-b
   <h2 class="sec-h fu">What I learned and what's next.</h2>
   <div class="ref-grid">
     <div class="ref-prose fu">
-      <p> major takeaway was the importance of designing systems around real deployment conditions. Including realistic bathroom sounds such as running taps, flushing, water splashes, and background conversations became essential for reducing false positives and improving robustness during live inferencing..</p>
-      <p>Beyond machine learning, the project strengthened my understanding of embedded systems, signal processing, hardware-software integration, and balancing engineering trade-offs such as memory usage, latency, power consumption, and model performance..</p>
+      <p>Major takeaway was the importance of designing systems around real deployment conditions. Including realistic bathroom sounds such as running taps, flushing, water splashes, and background conversations became essential for reducing false positives and improving robustness during live inferencing..</p>
+      <p>Beyond machine learning, the project strengthened my understanding of embedded systems, signal processing, hardware-software integration, and balancing engineering trade-offs such as memory usage, latency, power consumption, and model performance.</p>
       <p>Collecting 30 different voices was time-consuming but non-negotiable. A model trained on one or two voices will overfit to those specific vocal characteristics and fail on anyone new. The testing results — 5 out of 7 first-attempt detections across unfamiliar voices — confirmed that voice diversity in the dataset directly produces robustness in the field.</p>
       <p>I also learned the importance of resilience and independent problem-solving throughout development. Many stages of the project involved failed experiments, inaccurate predictions, unstable deployments, and repeated retraining cycles before improvements were achieved. Troubleshooting these issues independently helped me become more methodical in analysing system failures and refining solutions iteratively.</p>
     </div>
