@@ -284,8 +284,7 @@ footer{padding:40px 48px;display:flex;align-items:center;justify-content:space-b
     </div>
     <div class="c-cards fu" style="transition-delay:.1s">
       <div class="c-card"><span class="cc-icon">⚡</span><div><p class="cc-title">Under 200ms</p><p class="cc-body">From spoken phrase to lit LED — entirely on-device, no network needed.</p></div></div>
-      <div class="c-card"><span class="cc-icon">🔒</span><div><p class="cc-title">Completely private</p><p class="cc-body">Audio is processed and discarded on-chip. Nothing is ever recorded or sent anywhere.</p></div></div>
-      <div class="c-card"><span class="cc-icon">🔋</span><div><p class="cc-title">Runs on a 9V battery</p><p class="cc-body">Milliwatt power draw makes continuous background listening practical without mains power.</p></div></div>
+      <div class="c-card"><span class="cc-icon">🔋</span><div><p class="cc-title">Energy saving</p><p class="cc-body">Optimised for low-power operation and fast inference on microcontroller hardware.</p></div></div>
       <div class="c-card"><span class="cc-icon">📶</span><div><p class="cc-title">No internet required</p><p class="cc-body">Works identically with or without Wi-Fi — no router, no hub, no data plan.</p></div></div>
     </div>
   </div>
@@ -303,7 +302,7 @@ footer{padding:40px 48px;display:flex;align-items:center;justify-content:space-b
       <p>For this project, <strong>5,710 audio clips</strong> were recorded directly through the Arduino's own microphone and fed into Edge Impulse. The platform extracted MFCC features, trained the classifier, and packaged the final model as a plug-in Arduino library — ready to flash with one click.</p>
     </div>
     <div class="c-cards fu" style="transition-delay:.1s">
-      <div class="c-card"><span class="cc-icon">🎙</span><div><p class="cc-title">Recorded on the device itself</p><p class="cc-body">Using the Arduino's own microphone meant training data matched the exact hardware the model would run on — a critical detail that prevented real-world failures.</p></div></div>
+      <div class="c-card"><span class="cc-icon">🎙</span><div><p class="cc-title">Recorded on the device itself</p><p class="cc-body">Using the Arduino's own microphone meant training data matched the exact hardware the model would run on.</p></div></div>
       <div class="c-card"><span class="cc-icon">📊</span><div><p class="cc-title">MFCC — sound into data</p><p class="cc-body">Converts raw audio into a compact fingerprint of just the frequency patterns that matter for human speech, stripping everything else out.</p></div></div>
       <div class="c-card"><span class="cc-icon">🧠</span><div><p class="cc-title">90.59% accuracy</p><p class="cc-body">A 1D CNN trained over 200 cycles classified 5 categories — 3 distress phrases, noise, and unknown speech — on data the model had never seen before.</p></div></div>
       <div class="c-card"><span class="cc-icon">📦</span><div><p class="cc-title">Exported at 13KB</p><p class="cc-body">The finished model fits in 13KB of flash — packaged as a ZIP library and added to the Arduino IDE in seconds.</p></div></div>
